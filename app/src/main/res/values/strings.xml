@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">Sample_FirebaseAuth_GitHub</string>
+    <string name="app_name">GitHub Authentication Sample</string>
+
+    <string name="github_client_id">YOUR GITHUB CLIENT ID</string>
+    <string name="github_client_secret">YOUR GITHUB CLIENT SECRET</string>
+    <string name="github_redirect_url">YOUR REDIRECT URL</string>
+    <string name="github_token">YOUR GITHUB TOKEN</string>
 </resources>
