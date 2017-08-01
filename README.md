@@ -1,3 +1,7 @@
+# It is incomplete.(08.01.2017 ~ )
+
+
+
 # [Android] Firebase Auth - GitHub SignIn/SignOut Sample
 
 ## Introduction
@@ -88,7 +92,12 @@ apply plugin: 'com.google.gms.google-services'
 ![](/image/Firebase_console_setting.png)
 
 #### 5. Integrate GitHub authentication<br/>
-- Integrate GitHub authentication into your app by following the developer's documentation.<br/>(Use the web application flow)
+- Integrate GitHub authentication into your app by following the [developer's documentation](https://developer.github.com/apps/building-integrations/setting-up-and-registering-oauth-apps/about-authorization-options-for-oauth-apps/).<br/>(<b>Use the web application flow</b>)
+
+
+
+
+
 - Set up an intent filter in your app to handle the OAuth 2.0 callback from GitHub.<br/>(At the end of the GitHub sign-in flow, you will receive an OAuth 2.0 access token.)
 
 #### 2.  
