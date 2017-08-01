@@ -92,3 +92,4 @@ apply plugin: 'com.google.gms.google-services'
 - Set up an intent filter in your app to handle the OAuth 2.0 callback from GitHub.<br/>(At the end of the GitHub sign-in flow, you will receive an OAuth 2.0 access token.)
 
 #### 2.  
+
