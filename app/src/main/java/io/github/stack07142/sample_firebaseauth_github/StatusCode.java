@@ -11,8 +11,8 @@ public class StatusCode {
 
     // TypeDef - IntDef
     // Constants
-    public static final int SUCCESS = 0;
-    public static final int FAIL = 1;
+    public static final int SUCCESS = 100;
+    public static final int FAIL = 101;
     public static final int NONE = 2000;
     public static final int REQUEST_GITHUB_SIGNIN = 1000;
     public static final int REQUEST_GITHUB_SIGNOUT = 1001;

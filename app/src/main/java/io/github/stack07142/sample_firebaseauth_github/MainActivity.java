@@ -146,7 +146,7 @@ public class MainActivity extends AppCompatActivity {
             if (resultCode == StatusCode.SUCCESS) {
 
                 Toast.makeText(this, "Sign In : Success", Toast.LENGTH_SHORT).show();
-            } else if (resultCode == StatusCode.FAIL) {
+            } else {
 
                 Toast.makeText(this, "Sign In : FAIL", Toast.LENGTH_SHORT).show();
             }
@@ -155,7 +155,7 @@ public class MainActivity extends AppCompatActivity {
             if (resultCode == StatusCode.SUCCESS) {
 
                 Toast.makeText(this, "Sign Out : Success", Toast.LENGTH_SHORT).show();
-            } else if (resultCode == StatusCode.FAIL) {
+            } else {
 
                 Toast.makeText(this, "Sign Out : Fail", Toast.LENGTH_SHORT).show();
             }
