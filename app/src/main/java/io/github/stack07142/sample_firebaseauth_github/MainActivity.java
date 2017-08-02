@@ -7,10 +7,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -21,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView nameTV;
     private TextView emailTV;
+    private ImageView profileIV;
 
     private ProgressBar progressBar;
 
@@ -38,6 +41,9 @@ public class MainActivity extends AppCompatActivity {
         // TextView
         nameTV = (TextView) findViewById(R.id.tv_name);
         emailTV = (TextView) findViewById(R.id.tv_email);
+
+        // Image View
+        profileIV = (ImageView) findViewById(R.id.iv_profile);
 
         // Sign In Button
         signInButton = (Button) findViewById(R.id.btn_signin);
@@ -92,8 +98,12 @@ public class MainActivity extends AppCompatActivity {
                     signInButton.setVisibility(View.GONE);
                     signOutButton.setVisibility(View.VISIBLE);
 
-                    nameTV.setText(mAuth.getCurrentUser().getDisplayName());
-                    emailTV.setText(mAuth.getCurrentUser().getEmail());
+                    nameTV.setText(user.getDisplayName());
+                    emailTV.setText(user.getEmail());
+
+                    Glide.with(getBaseContext())
+                            .load(user.getPhotoUrl()).into(profileIV);
+
                 }
                 // User is signed out
                 else {
@@ -105,6 +115,7 @@ public class MainActivity extends AppCompatActivity {
 
                     nameTV.setText("");
                     emailTV.setText("");
+                    profileIV.setImageResource(0);
                 }
             }
         };

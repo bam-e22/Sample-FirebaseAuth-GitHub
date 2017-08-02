@@ -36,6 +36,9 @@ dependencies {
 
     // Using the OkHttp Library for HTTP Networking
     compile 'com.squareup.okhttp3:okhttp:3.8.1'
+
+    // Using the Glide Library for Image loading
+    compile 'com.github.bumptech.glide:glide:3.7.0'
 }
 
 apply plugin: 'com.google.gms.google-services'

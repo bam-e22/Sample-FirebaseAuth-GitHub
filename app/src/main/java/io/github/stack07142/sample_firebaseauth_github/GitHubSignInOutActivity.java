@@ -189,6 +189,7 @@ public class GitHubSignInOutActivity extends Activity {
 
         if (requestCode == StatusCode.REQUEST_GITHUB_REDIRECT) {
 
+            setResult(resultCode);
             finish();
         }
     }
