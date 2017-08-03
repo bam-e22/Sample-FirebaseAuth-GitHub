@@ -11,18 +11,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+
+        <activity
+            android:name=".SignInOutActivity"
+            android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".GitHubSignInOutActivity"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar">
 
-        </activity>
         <activity
             android:name=".RedirectedActivity"
             android:theme="@android:style/Theme.Translucent.NoTitleBar">
@@ -35,6 +34,7 @@
                 <data android:scheme="abcdefg" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>

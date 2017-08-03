@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="io.github.stack07142.sample_firebaseauth_github.MainActivity">
+    tools:context="io.github.stack07142.sample_firebaseauth_github.SignInOutActivity">
 
     <ProgressBar
         android:id="@+id/progress_bar"
