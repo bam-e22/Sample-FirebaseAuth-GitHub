@@ -74,7 +74,7 @@ apply plugin: 'com.google.gms.google-services'
 
 ![](/image/OAuth_Application_Settings.png)
 
-#### 3. Generate new token
+#### 2. Generate new token
 - get your <b><i>Personal access tokens</i></b>
 
 ![](/image/Personal_Access_Tokens.png)
@@ -83,7 +83,7 @@ apply plugin: 'com.google.gms.google-services'
 
 ![](/image/Personal_Access_Tokens_Copy.png)
 
-#### 4. Enable GitHub authentication in the Firebase Console
+#### 3. Enable GitHub authentication in the Firebase Console
 - In the Firebase console, open the Auth Section
 - On the Sign in method tab, enable the GitHub sign-in method and specify the OAuth 2.0 Client ID and Client Secret you got from GitHub.
 - We are not going to use Firebase authorization Callback URL. Make your own callback url.<br/>
@@ -94,7 +94,7 @@ apply plugin: 'com.google.gms.google-services'
 
 ![](/image/Firebase_console_setting.png)
 
-#### 5. Integrate GitHub authentication<br/>
+#### 4. Integrate GitHub authentication<br/>
 - Integrate GitHub authentication into your app by following the [developer's documentation](https://developer.github.com/apps/building-integrations/setting-up-and-registering-oauth-apps/about-authorization-options-for-oauth-apps/).<br/>
 
 - Set up an intent filter in your app to handle the OAuth 2.0 callback from GitHub.<br/>(At the end of the GitHub sign-in flow, you will receive an OAuth 2.0 access token.)
